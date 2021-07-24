@@ -42,7 +42,7 @@ RUN python3 -m pip install -U \
 RUN apt-get update -y && apt-get install --no-install-recommends -y libasio-dev libtinyxml2-dev
 RUN apt-get update -y && apt-get install --no-install-recommends -y libcunit1-dev
 
-RUN apt-get update -y && apt-get install --no-install-recommends -y clang-format python3-mypy python3-pytest-mock python3-nose gperf python3-venv ros-foxy-osrf-testing-tools-cpp ros-foxy-mimick-vendor python3-babeltrace
+RUN apt-get update -y && apt-get install --no-install-recommends -y clang-format python3-mypy python3-pytest-mock python3-nose gperf python3-venv ros-foxy-osrf-testing-tools-cpp ros-foxy-mimick-vendor python3-babeltrace python3-lttng
 
 RUN /bin/bash -c "source /opt/ros/foxy/setup.bash" && rosdep init
 
