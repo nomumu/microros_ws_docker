@@ -11,4 +11,4 @@ docker run --rm -it \
 	--mount type=bind,src=`pwd`/.cache,dst=/home/$USER/.cache \
 	--mount type=bind,src=`pwd`/.local,dst=/home/$USER/.local \
 	--privileged -v /dev:/dev \
-	microros_ws_foxy /bin/bash -c "source /opt/ros/foxy/setup.bash && /bin/bash"
+	microros_ws_humble /bin/bash -c "source /opt/ros/humble/setup.bash && /bin/bash"
